@@ -107,7 +107,7 @@ RUN apt-get -y purge build-essential libqpdf-dev \
 RUN cp docker/imagemagick-policy.xml /etc/ImageMagick-6/policy.xml
 RUN cp gunicorn.conf.py /usr/src/paperless
 RUN cp docker/supervisord.conf /etc/supervisord.conf
-# RUN cp docker/docker-entrypoint.sh /sbin/docker-entrypoint.sh
+RUN cp docker/flower-conditional.sh /usr/local/bin && chmod 755 /usr/local/bin/flower-conditional.sh 
 COPY scripts/docker-entrypoint.sh /sbin/docker-entrypoint.sh
 COPY scripts/docker-prepare.sh /sbin/docker-prepare.sh
 
