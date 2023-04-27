@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-ARG version=v1.14.0
+ARG version=v1.14.1
 
 #Dependencies
 RUN apt-get update \
