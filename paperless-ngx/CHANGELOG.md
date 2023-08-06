@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.17.0-0
+- Upgrade to paperless-ngx v1.17.0
+
 ## 1.16.5-0
 - Upgrade to paperless-ngx v1.16.5
 
